@@ -6,3 +6,6 @@ test:
 
 develop:
 	python setup.py develop
+
+run:
+	python -m stormtrooper.stormtrooper report -22.53482 -43.21828 10
