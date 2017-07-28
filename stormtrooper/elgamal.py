@@ -38,8 +38,5 @@ def sign(plaintext, key):
     while True:
         k = random.StrongRandom().randint(1, key.p - 1)
         if GCD(k, key.p - 1) == 1:
-            print('here')
             break
-        else:
-            print('not found')
     return key.sign(h, k)
