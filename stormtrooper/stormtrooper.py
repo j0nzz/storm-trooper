@@ -42,6 +42,7 @@ def config_logging():
 
 def main():
     import argparse
+    import sys
 
     # parse arguments
     parser = argparse.ArgumentParser(
@@ -72,7 +73,11 @@ def main():
     if args.verbose:
         config_logging()
 
-    args.func(args)
+    try:
+        args.func(args)
+    except:
+        parser.print_help()
+        sys.exit(0)
 
 
 if __name__ == "__main__":
