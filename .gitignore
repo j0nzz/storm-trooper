@@ -6,6 +6,9 @@ __pycache__/
 # vim swp
 *.swp
 
+# test keys
+keys
+
 # C extensions
 *.so
 
